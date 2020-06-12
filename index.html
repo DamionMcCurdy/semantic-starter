@@ -33,7 +33,7 @@
 
       <img src="https://www.hqmc.marines.mil/portals/134/Mixed%20Media/EGA%2017.jpg" alt="USMC">
       <p>Damion McCurdy</p>
-    </h1>
+    </h>
   </div>
   <!-- End Header -->
 
@@ -43,7 +43,28 @@
     <h2 class="ui center aligned icon header">
       <!-- change 'code' to different icon name: https://semantic-ui.com/elements/icon.html -->
       <i class="coffee code icon"></i>
+      
+<body> 
+    <button id="clickIt">Add a cup of coffee</button> 
+  
+    <p id="hoverPara"></p> 
+  
+    <b id="effect"></b> 
+  
+    <script> 
+        const x = document.getElementById("clickIt"); 
+        //const y = document.getElementById("hoverPara"); 
+  
+        x.addEventListener("click", RespondClick); 
 
+        function RespondClick() { 
+            document.getElementById("effect").innerHTML += 
+                      "Click Event" + "<br>"; 
+        } 
+    </script> 
+</body> 
+
+      
       <div class="ui brown statistic">
         <div class="value">
           1,775
@@ -137,9 +158,9 @@
               Japan
             </span>
       </div>
-      <h2 class="ui center aligned icon header">
-        <i class="circular brown users icon"></i>
-        Friends
+         <h2 class="ui center aligned icon header">
+           <i class="circular brown users icon"></i>
+           Friends
       </h2>    
       </div>
         <img src="Coffee.jpg" padding: 20px; alt="">
